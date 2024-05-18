@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #BA4949;
+}
+
+.max-width {
+    max-width: 1300px;
+    padding: 0 10px;
+    margin: auto;
+}
+
+.navbar .logo a {
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    position:relative;
+    width: 100%;
+    z-index: 999;
+    padding: 20px 0;
+    background-color: #d26666;
+    border-bottom: solid #BA4949 1px;
+}
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-flex;
+}
+
+.navbar .menu li a {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 25px;
+}
+
+.menu-btn {
+    color: #ffffff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu-btn:hover {
+    opacity: 0.8; 
+}
+@media (max-width: 947px) {
+    .menu-btn {
+        display: block;
+        z-index: 999;
+    }
+
+    .navbar .menu {
+        background-color: #BA4949;
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        text-align: center;
+        padding-top: 80px;
+    }
+
+    .navbar .menu.active {
+        left: 0;
+    }
+
+    .navbar .menu li {
+        display: block;
+    }
+
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 13px 0;
+        font-size: 25px;
+    }
+
+    .max-width {
+        max-width: 930px;
+    }
+}
+
+.pomodoro-container {
+    margin-top: 100px;
+    text-align: center;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.timer {
+    font-size: 60px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.controls .btn {
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.button-container {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    display: inline-block;
+    margin: 10px 20px;
+}
