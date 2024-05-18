@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    background-color: #BA4949;
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none; /* Remove a linha embaixo dos links */
+  }
+  
+ .po {
+    padding-top: 50px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .geral {
+    padding-top: 50px;
+    text-align: center;
+    background-color: rgb(245, 245, 245);
+    height: 270px;
+    color: gray;
+    position: relative;
+    width: 500px;
+    margin: 0 auto; /* Centraliza o container */
+    border-radius: 30px;
+    margin-top: 70px;
+  }
+  
+  h1 {
+    font-size: 51px;
+  }
+
+  .cn{
+    color: gray;
+    font-size: 20px;
+  }
+  
+  .tudo{
+    margin-top: 110px;
+  }
